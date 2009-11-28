@@ -1,15 +1,34 @@
 This is a simple YUI3 module dependency graph visualizer. It uses the
 GPL-ed TouchGraph (TGLinkBrowser java applet) for visualization.
 
+What does it do and how:
+========================
+
+* It goes and scans the filesystem for javascript files (files.php)
+* Runs Rhino JS engine with just enough fake browser objects and
+  YUI.add() to catch all the YUI3 module registrations (modwiz.js)
+* Using the module metadata it generates a TouchGraph TGLinkBrowser
+  XML file representing modules /graph nodes/ and their dependency 
+  /edges/ (modwiz.php)
+* It renders the modules graph in a browser using a java apple
+  (index.hml, TGLinkBrowser.jar...)
+
 Usage:
+======
 
 * Place this repository folder into your yui3/build folder
-* Make the folder accessible using your browser through http:// URL
+* It is by default configured to scan for *-debug.js files (check
+  files.php to adjust)
+* Make modwiz folder accessible using your browser through http:// URL
 * Navigate your browser to that URL
 * Wait for a while
 * Enjoy the dependency graph
 
-This is just a toy project to get a glimps on the module dependencies.
+
+All in all this is just a toy project to get a glimps on the module
+dependencies.
+
+Available under the BSD License.
 
 Enjoy!
 Standa Opichal <opichals@gmail.com>
