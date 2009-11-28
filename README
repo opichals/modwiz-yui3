@@ -1,11 +1,11 @@
 This is a simple YUI3 module dependency graph visualizer. It uses the
-GPL TouchGraph java applet for visualization.
+GPL-ed TouchGraph (TGLinkBrowser java applet) for visualization.
 
 Usage:
 
-* Place this repository into your yui3/build folder
-* Make that folder accessible using your browser through http:// URL
-* Navigate your browser URL to access that folder
+* Place this repository folder into your yui3/build folder
+* Make the folder accessible using your browser through http:// URL
+* Navigate your browser to that URL
 * Wait for a while
 * Enjoy the dependency graph
 
