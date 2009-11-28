@@ -1,0 +1,15 @@
+This is a simple YUI3 module dependency graph visualizer. It uses the
+GPL TouchGraph java applet for visualization.
+
+Usage:
+
+* Place this repository into your yui3/build folder
+* Make that folder accessible using your browser through http:// URL
+* Navigate your browser URL to access that folder
+* Wait for a while
+* Enjoy the dependency graph
+
+This is just a toy project to get a glimps on the module dependencies.
+
+Enjoy!
+Standa Opichal <opichals@gmail.com>
